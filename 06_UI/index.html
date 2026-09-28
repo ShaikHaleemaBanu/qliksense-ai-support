@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qlik Sense Support Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- Header -->
+    <header class="chat-header">
+
+        <div class="header-left">
+
+            <div class="header-icon">
+                Q
+            </div>
+
+            <div>
+                <h1>Qlik Sense Support Assistant</h1>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    AI Support Assistant
+                </div>
+            </div>
+
+        </div>
+
+
+        <button id="new-chat-button">
+            + New Conversation
+        </button>
+
+    </header>
+
+
+    <!-- Chat -->
+    <main id="chat-container" class="chat-container">
+
+        <!-- Welcome -->
+        <div class="message assistant-message">
+
+            <div class="avatar">
+                AI
+            </div>
+
+            <div class="message-content">
+
+                <p>
+                    Hello! I'm your Qlik Sense Support Assistant.
+                </p>
+
+                <p>
+                    I can help you troubleshoot common Qlik Sense issues
+                    step by step.
+                </p>
+
+                <p>
+                    Select an issue below or describe your problem.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Quick Options -->
+        <div id="quick-options" class="quick-options">
+
+            <button
+                class="issue-button"
+                data-message="I am unable to login to Qlik Sense">
+
+                🔐
+                <span>
+                    Login Issue
+                </span>
+
+            </button>
+
+
+            <button
+                class="issue-button"
+                data-message="I forgot my Qlik Sense password">
+
+                🔑
+                <span>
+                    Password Issue
+                </span>
+
+            </button>
+
+
+            <button
+                class="issue-button"
+                data-message="I am having a browser compatibility issue with Qlik Sense">
+
+                🌐
+                <span>
+                    Browser Issue
+                </span>
+
+            </button>
+
+
+            <button
+                class="issue-button"
+                data-message="I have an access issue with Qlik Sense">
+
+                🔒
+                <span>
+                    Access Issue
+                </span>
+
+            </button>
+
+
+            <button
+                class="issue-button"
+                data-message="I raised an incorrect Qlik Sense ticket">
+
+                🎫
+                <span>
+                    Incorrect Ticket
+                </span>
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- Input -->
+    <footer class="input-area">
+
+        <input
+            type="text"
+            id="message-input"
+            placeholder="Describe your Qlik Sense issue..."
+            autocomplete="off"
+        >
+
+        <button id="send-button">
+            Send
+        </button>
+
+    </footer>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
