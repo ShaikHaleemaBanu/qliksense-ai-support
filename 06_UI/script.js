@@ -442,7 +442,7 @@ async function sendMessage(
 
         const responsePromise =
             fetch(
-                "http://127.0.0.1:8000/chat",
+                "https://qliksense-ai-support-backend.onrender.com/chat",
                 {
                     method: "POST",
 
@@ -626,7 +626,7 @@ newChatButton.addEventListener(
         try {
 
             await fetch(
-                "http://127.0.0.1:8000/reset",
+                "https://qliksense-ai-support-backend.onrender.com/reset",
                 {
                     method: "POST"
                 }
